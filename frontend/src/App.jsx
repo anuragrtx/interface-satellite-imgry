@@ -34,7 +34,6 @@ export default function App() {
       const res = await axios.post("http://localhost:5001/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" },
 
-
       });
       setMaskImage(res.data.mask);
     } catch (error) {
